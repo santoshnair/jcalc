@@ -23,7 +23,7 @@ public class AddString {
     }
 
     private int getEmptyStringSum(){
-        if(this.emptyString.trim().length()==0){
+        if(this.emptyString.trim().isEmpty()){
             return 0;
         }
         return Stream.of(this.emptyString.split(",")).mapToInt(Integer::parseInt).sum();

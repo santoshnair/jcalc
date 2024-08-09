@@ -3,7 +3,7 @@ import java.util.stream.Stream;
 
 public class Main {
     static int add(String numbers){
-        if(numbers.trim().length()==0){
+        if(numbers.trim().isEmpty()){
             return 0;
         }
         return  Stream.of(numbers.split(",")).mapToInt(Integer::parseInt).sum();
