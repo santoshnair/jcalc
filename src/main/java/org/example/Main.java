@@ -6,7 +6,7 @@ public class Main {
         if(numbers.trim().isEmpty()){
             return 0;
         }
-        return  Stream.of(numbers.split(",")).mapToInt(Integer::parseInt).sum();
+        return Stream.of(numbers.split(",")).mapToInt(Integer::parseInt).sum();
     }
     public static void main(String[] args) {
         String numbers = "1,2,3,4,5,6,7,8,9";
